@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 300px;
+    transform: translate(-50%, -50%);
+}
+
+.container__content {
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 90%;
+    position: relative;
+}
+
+.eye-overlay {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    top: 4%;
+    left: 5%;
+    background-color: hsla(178, 100%, 50%, 0.336);
+    padding: 39% 37% 34% 37%;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.eye-overlay:hover {
+    opacity: 1;
+}
+
+.container__description {
+    padding: 0 25px;
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.header h2:hover {
+    color:  hsl(178, 100%, 50%);
+}
+
+.header p{
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 13px;
+    line-height: 1.4;
+}
+
+.container__info {
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid  hsl(215, 32%, 27%);
+}
+
+.container__info img {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.eth-block {
+    margin-bottom: 20px;
+}
+
+.eth-block span {
+    vertical-align: middle;
+    font-size: 15px;
+    color: hsl(178, 100%, 50%);
+}
+
+.clock-block span {
+    vertical-align: middle;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.footer {
+    display: flex;
+    padding: 25px 0;
+    justify-content:center;
+
+}
+
+.footer img {
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin-right: 6px;
+
+}
+
+.footer p {
+    color: hsl(215, 51%, 70%);
+    font-size: 15px; 
+    vertical-align: middle;
+    padding-top: 7px;
+}
+
+.footer p a {
+    color: #FFF;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    color: hsl(178, 100%, 50%);
+}
